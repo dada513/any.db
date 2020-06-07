@@ -4,4 +4,4 @@ A work in progress node.js library for easy managment of databases
 
 ### API
 
-See (docs)[https://anydb.netlify.app]
+See [docs](https://anydb.netlify.app)
