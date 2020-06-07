@@ -1,0 +1,45 @@
+{
+  "name": "any.db",
+  "version": "0.1.0",
+  "description": "A simple package that adds an easy way of storing app data in a database",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix",
+    "test": "jest",
+    "doc": "typedoc --out docs src/ --includeDeclarations --exclude **/node_modules/** --readme README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dada513/any.db.git"
+  },
+  "keywords": [
+    "database",
+    "mysql",
+    "sqlite",
+    "json",
+    "yaml"
+  ],
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "author": "dada513",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dada513/any.db/issues"
+  },
+  "homepage": "https://github.com/dada513/any.db#readme",
+  "dependencies": {
+    "sqlstring": "^2.3.2"
+  },
+  "devDependencies": {
+    "better-sqlite3": "^7.0.1",
+    "jest": "^26.0.1",
+    "mysql2": "^2.1.0",
+    "standard": "^14.3.4",
+    "typedoc": "^0.17.7",
+    "typescript": "^3.9.5"
+  }
+}
