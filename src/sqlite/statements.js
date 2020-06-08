@@ -5,7 +5,7 @@ module.exports = {
   set: (key, value) =>
     `REPLACE INTO json (key, value) VALUES (${sqlstring.escape(
       key
-    )}, ${sqlstring.escape(value)})`,
+    )}, '${value}')`,
   get: (key) => `SELECT * FROM json WHERE (key = ${sqlstring.escape(key)})`,
   all: () => 'SELECT * FROM json',
   delete: (key) => `DELETE FROM json WHERE (key = ${sqlstring.escape(key)})`

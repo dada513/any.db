@@ -21,7 +21,7 @@ module.exports = class Database {
   async get (key) {
     const result = this.connection.prepare(statements.get(key)).get()
     if (result) {
-      return JSON.parse(result.value.replace(/\\"/g, '"')) // replace backslashes made by JSON.stringify
+      return JSON.parse(result.value)
     } else {
       return null
     }
@@ -35,9 +35,7 @@ module.exports = class Database {
   async all () {
     const query = this.connection.prepare(statements.all()).all()
     const all = new Map()
-    query.forEach(({ key, value }) =>
-      all.set(key, JSON.parse(value.replace(/\\"/g, '"')))
-    )
+    query.forEach(({ key, value }) => all.set(key, JSON.parse(value)))
     return all
   }
 
