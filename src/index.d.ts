@@ -44,4 +44,4 @@ declare class Database {
 export function createDatabase(
   type: "sqlite" | "mysql",
   options: SQLiteOptions
-): Database;
+): Promise<Database>;
