@@ -18,6 +18,12 @@ npm i better-sqlite3
 
 **Note:** MySQL and more databases will be supported in the future.
 
+### Getting started
+
+See some examples:
+
+- [Hello World](./examples/hello-world/README.md)
+
 ### API
 
 See [docs](https://anydb.netlify.app)
