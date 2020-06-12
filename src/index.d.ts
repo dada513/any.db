@@ -7,7 +7,8 @@ declare class Database {
    */
   constructor(options: SQLiteOptions);
   /**
-   * Connects to the database
+   * Connects to the database.
+   * Don't use this method if you are using createDatabase
    */
   connect(): Promise<void>;
   /**
@@ -36,12 +37,16 @@ declare class Database {
    */
   delete(key: string): Promise<void>;
 }
+
+export type supportedDatabases = "sqltie";
+export type dbOptions = SQLiteOptions;
+
 /**
  * Creates the database
  * @param type Type of the database: MySQL or SQLite
  * @param options Options for the database connection
  */
 export function createDatabase(
-  type: "sqlite" | "mysql",
-  options: SQLiteOptions
+  type: supportedDatabases,
+  options: dbOptions
 ): Promise<Database>;
