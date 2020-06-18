@@ -22,7 +22,7 @@ npm i better-sqlite3
 
 See some examples:
 
-- [Hello World](./examples/hello-world/README.md)
+- [Hello World](./examples/hello-world/)
 
 ### API
 
