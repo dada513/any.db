@@ -2,6 +2,6 @@
   publish = "docs/"
   command = "npm run doc"
 [[redirects]]
-  from = "//anydb.netlify.app"
-  to = "//anydb.dada513.eu"
+  from = "https://anydb.netlify.app/*"
+  to = "https://anydb.dada513.eu"
   status = 301
