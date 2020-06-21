@@ -1,4 +1,5 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b160d8cd-c373-4eba-aa97-593215f34912/deploy-status)](https://app.netlify.com/sites/anydb/deploys)
 
 A work in progress node.js library for easy managment of databases
 
